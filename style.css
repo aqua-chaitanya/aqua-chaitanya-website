@@ -290,4 +290,54 @@ header p {
 .btn-whatsapp {
     background-color: #25d366;
     color: #ffffff;
+}.custom-info-section {
+    padding: 40px 20px;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
 }
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.availability-card, .services-desc-card {
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    margin-bottom: 25px;
+}
+
+.availability-card h2, .services-desc-card h2 {
+    color: #0056b3;
+    margin-bottom: 15px;
+}
+
+.service-bullets {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+.service-bullets li {
+    padding: 8px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.cta-box {
+    text-align: center;
+    margin-top: 25px;
+}
+
+.btn-call {
+    display: inline-block;
+    background-color: #28a745;
+    color: white;
+    padding: 12px 25px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
