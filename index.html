@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aqua Chaitanya RO Services | Sales & Service</title>
+    <style>
+        /* --- Global Reset & Modern Font --- */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: #f1f5f9;
+            color: #0f172a;
+            line-height: 1.6;
+        }
+
+        /* --- Header Section (Same as Image 2) --- */
+        header {
+            background: linear-gradient(180deg, #0284c7 0%, #0369a1 100%);
+            color: #ffffff;
+            text-align: center;
+            padding: 28px 16px 20px 16px;
+            box-shadow: 0 4px 15px rgba(2, 132, 199, 0.2);
+        }
+
+        .logo {
+            width: 120px;
+            max-width: 120px;
+            height: auto;
+            display: block;
+            margin: 0 auto 14px auto;
+            border-radius: 14px;
+            background: #ffffff;
+            padding: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+        }
+
+        header h1 {
+            font-size: 22px;
+            font-weight: 700;
+            margin-bottom: 6px;
+            letter-spacing: 0.2px;
+        }
+
+        header p {
+            font-size: 14px;
+            opacity: 0.9;
+            font-weight: 400;
+        }
+
+        /* --- Navigation Pills --- */
+        .nav {
+            display: flex;
+            justify-content: center;
+            gap: 8px;
+            margin-top: 18px;
+            flex-wrap: wrap;
+        }
+
+        .nav a {
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 13px;
+            font-weight: 500;
+            background: rgba(255, 255, 255, 0.2);
+            padding: 6px 14px;
+            border-radius: 20px;
+            backdrop-filter: blur(4px);
+        }
+
+        /* --- Layout Container --- */
+        .container {
+            width: 100%;
+            max-width: 480px;
+            margin: 20px auto;
+            padding: 0 16px;
+        }
+
+        /* --- Rounded Cards (Same as Image 2) --- */
+        .card {
+            background: #ffffff;
+            border-radius: 16px;
+            padding: 22px;
+            margin-bottom: 18px;
+            box-shadow: 0 4px 18px rgba(0, 0, 0, 0.04);
+            border: 1px solid #e2e8f0;
+        }
+
+        .card h2 {
+            color: #0369a1;
+            font-size: 19px;
+            margin-bottom: 12px;
+            border-bottom: 2px solid #e0f2fe;
+            padding-bottom: 6px;
+        }
+
+        .hero h2 {
+            border: none;
+            padding: 0;
+            font-size: 20px;
+            color: #0284c7;
+            line-height: 1.4;
+        }
+
+        .hero p {
+            color: #334155;
+            font-size: 14px;
+            margin-top: 8px;
+        }
+
+        /* --- Service Items --- */
+        .service-item {
+            margin-bottom: 14px;
+        }
+
+        .service-item h3 {
+            font-size: 15px;
+            color: #0284c7;
+            margin-bottom: 2px;
+            font-weight: 600;
+        }
+
+        .service-item p {
+            font-size: 13px;
+            color: #475569;
+        }
+
+        /* --- Product Grid --- */
+        .product-card {
+            position: relative;
+            background: #ffffff;
+            border: 1px solid #cbd5e1;
+            border-radius: 14px;
+            padding: 16px;
+            margin-bottom: 16px;
+            text-align: center;
+        }
+
+        .product-img {
+            width: 100%;
+            height: 180px;
+            object-fit: contain;
+            border-radius: 8px;
+            margin-bottom: 10px;
+            background-color: #f8fafc;
+            padding: 8px;
+        }
+
+        .product-card h3 {
+            font-size: 16px;
+            color: #0f172a;
+            margin-bottom: 4px;
+        }
+
+        .product-card p {
+            font-size: 13px;
+            color: #64748b;
+            margin-bottom: 12px;
+        }
+
+        .badge {
+            position: absolute;
+            top: 12px;
+            right: 12px;
+            background-color: #0284c7;
+            color: #ffffff;
+            font-size: 10px;
+            font-weight: 700;
+            padding: 4px 10px;
+            border-radius: 12px;
+        }
+
+        /* --- List Checkmarks --- */
+        .card ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .card li {
+            position: relative;
+            padding-left: 24px;
+            margin-bottom: 10px;
+            font-size: 14px;
+            color: #334155;
+        }
+
+        .card li::before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: #0284c7;
+            font-weight: bold;
+        }
+
+        /* --- Action Buttons --- */
+        .btn {
+            display: block;
+            width: 100%;
+            padding: 13px 16px;
+            margin-top: 10px;
+            border-radius: 10px;
+            text-align: center;
+            font-weight: 600;
+            font-size: 15px;
+            text-decoration: none;
+            box-sizing: border-box;
+        }
+
+        .btn-call {
+            background-color: #0284c7;
+            color: #ffffff;
+        }
+
+        .btn-whatsapp {
+            background-color: #25d366;
+            color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header & Navigation -->
+    <header>
+        <img src="IMG-20260803-WA0002.jpg" alt="Aqua Chaitanya Logo" class="logo">
+        <h1>Aqua Chaitanya RO Services</h1>
+        <p>Pure Water, Healthy Life!</p>
+        <nav class="nav">
+            <a href="#home">Home</a>
+            <a href="#services">Services</a>
+            <a href="#products">Products</a>
+            <a href="#why-us">Why Us</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <div class="container">
+
+        <!-- Welcome Banner -->
+        <section id="home" class="card hero">
+            <h2>Reliable RO Water Purifier Sales & Service</h2>
+            <p>Convenient doorstep service for homes and offices across Pimpri-Chinchwad, Pune.</p>
+        </section>
+
+        <!-- Our Services -->
+        <section id="services" class="card">
+            <h2>Our Key Services</h2>
+            <div class="service-item">
+                <h3>🏠 Home Service</h3>
+                <p>Convenient doorstep service for homes and offices in Pimpri-Chinchwad.</p>
+            </div>
+            <div class="service-item">
+                <h3>🛒 RO Sales</h3>
+                <p>Water purifier solutions tailored for different household water quality needs.</p>
+            </div>
+            <div class="service-item">
+                <h3>🛠️ AMC Service</h3>
+                <p>Maintenance plans designed to keep your water purifier in top condition year-round.</p>
+            </div>
+        </section>
+
+        <!-- Product Showcase (1.jpg, 2.jpg, 3.jpg, 4.jpg) -->
+        <section id="products" class="card">
+            <h2>Our Water Purifiers</h2>
+            <p style="margin-bottom: 15px; font-size: 13px; color: #64748b;">Explore our range of water purification systems:</p>
+
+            <div class="product-card">
+                <img src="1.jpg" alt="Domestic RO Purifier" class="product-img">
+                <h3>Domestic RO Purifier</h3>
+                <p>Suitable solutions for everyday family use.</p>
+                <a href="https://wa.me/918605350767?text=Hi,%20I%20am%20interested%20in%20Domestic%20RO%20Purifier" class="btn btn-whatsapp">Enquire Now →</a>
+            </div>
+
+            <div class="product-card">
+                <span class="badge">POPULAR</span>
+                <img src="2.jpg" alt="RO + UV + UF Purifier" class="product-img">
+                <h3>RO + UV + UF Purifier</h3>
+                <p>Multi-stage purification for advanced water quality and safety.</p>
+                <a href="https://wa.me/918605350767?text=Hi,%20I%20am%20interested%20in%20RO+UV+UF%20Purifier" class="btn btn-whatsapp">Enquire Now →</a>
+            </div>
+
+            <div class="product-card">
+                <img src="3.jpg" alt="Copper Alkaline RO Purifier" class="product-img">
+                <h3>Copper Alkaline RO Purifier</h3>
+                <p>Enriched with essential minerals and alkaline balance for pure taste.</p>
+                <a href="https://wa.me/918605350767?text=Hi,%20I%20am%20interested%20in%20Copper%20Alkaline%20RO%20Purifier" class="btn btn-whatsapp">Enquire Now →</a>
+            </div>
+
+            <div class="product-card">
+                <span class="badge">BESTSELLER</span>
+                <img src="4.jpg" alt="Commercial RO System" class="product-img">
+                <h3>Commercial RO System</h3>
+                <p>High-capacity purification for offices, shops, and commercial spaces.</p>
+                <a href="https://wa.me/918605350767?text=Hi,%20I%20am%20interested%20in%20Commercial%20RO%20System" class="btn btn-whatsapp">Enquire Now →</a>
+            </div>
+        </section>
+
+        <!-- Why Choose Us -->
+        <section id="why-us" class="card">
+            <h2>Why Choose Aqua Chaitanya?</h2>
+            <ul>
+                <li>Expert Service for All Brands & Models</li>
+                <li>Genuine Spare Parts & Filter Replacements</li>
+                <li>Quick & Prompt Doorstep Support</li>
+                <li>Affordable Pricing with Clear Quotes</li>
+            </ul>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="card">
+            <h2>Contact Us</h2>
+            <p><strong>Service Area:</strong> Pimpri-Chinchwad, Pune</p>
+            <p style="margin: 8px 0 12px 0;"><strong>Phone:</strong> 8605350767</p>
+            
+            <a href="tel:8605350767" class="btn btn-call">📞 Call Now</a>
+            <a href="https://wa.me/918605350767" class="btn btn-whatsapp">💬 WhatsApp Message</a>
+        </section>
+
+    </div>
+
+</body>
+</html>
