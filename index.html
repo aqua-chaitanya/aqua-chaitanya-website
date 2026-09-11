@@ -221,6 +221,30 @@
             color: #ffffff;
         }
     </style>
+<style>
+  /* नेव्हिगेशन बटन्स (Home, Services, Products...) मागे-पुढे होण्यासाठी */
+  header nav a, .nav-buttons a, .btn {
+    display: inline-block !important;
+    animation: sideToSide 2.5s infinite ease-in-out !important;
+  }
+
+  @keyframes sideToSide {
+    0% { transform: translateX(0px); }
+    50% { transform: translateX(6px); } /* मागे-पुढे हलणे */
+    100% { transform: translateX(0px); }
+  }
+
+  /* Call Now आणि WhatsApp बटन्स बाऊन्स होण्यासाठी */
+  .call-btn, .whatsapp-btn, .action-btn {
+    display: inline-block !important;
+    animation: bounceEffect 2s infinite !important;
+  }
+
+  @keyframes bounceEffect {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-6px) scale(1.03); } /* वर-खाली होणे */
+  }
+</style>
 </head>
 <body>
 
