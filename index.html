@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aqua Chaitanya RO Services</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background-color: #f4f7f6;
+      color: #333;
+      text-align: center;
+      line-height: 1.5;
+    }
+
+    .container {
+      max-width: 500px;
+      margin: 0 auto;
+      padding: 15px;
+    }
+
+    /* हेडर आणि लोगो */
+    header {
+      background-color: #0284c7;
+      color: white;
+      padding: 20px 10px;
+      border-radius: 0 0 15px 15px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    .site-logo {
+      max-width: 120px;
+      height: auto;
+      margin-bottom: 8px;
+    }
+
+    header h2 {
+      font-size: 22px;
+      margin-bottom: 4px;
+    }
+
+    header p {
+      font-size: 13px;
+      opacity: 0.9;
+    }
+
+    /* नेव्हिगेशन अ‍ॅनिमेशन */
+    .nav-buttons {
+      margin-top: 15px;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 6px;
+    }
+
+    .nav-buttons a {
+      background-color: rgba(255, 255, 255, 0.2);
+      color: white;
+      padding: 6px 12px;
+      border-radius: 20px;
+      text-decoration: none;
+      font-size: 13px;
+      font-weight: bold;
+      animation: sideToSide 2.5s infinite ease-in-out;
+    }
+
+    @keyframes sideToSide {
+      0%, 100% { transform: translateX(0); }
+      50% { transform: translateX(4px); }
+    }
+
+    /* कॉल आणि व्हॉट्सॲप बटन्स */
+    .action-buttons {
+      margin: 20px 0;
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+    }
+
+    .btn-call {
+      background-color: #0284c7;
+      color: white;
+      padding: 10px 18px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      animation: bounceEffect 2s infinite;
+    }
+
+    .btn-whatsapp {
+      background-color: #25d366;
+      color: white;
+      padding: 10px 18px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      animation: bounceEffect 2s infinite;
+    }
+
+    @keyframes bounceEffect {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-5px); }
+    }
+
+    /* सर्व्हिस कार्ड्स */
+    .card {
+      background: white;
+      padding: 15px;
+      margin: 15px 0;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+      text-align: left;
+    }
+
+    .card h3 {
+      color: #0284c7;
+      font-size: 16px;
+      margin-bottom: 6px;
+    }
+
+    .card p {
+      font-size: 13px;
+      color: #555;
+    }
+
+    /* प्रॉडक्ट कार्ड्स */
+    .product-card {
+      background: white;
+      padding: 18px 15px;
+      margin: 20px 0;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+      text-align: center;
+    }
+
+    .product-card img {
+      width: 100%;
+      max-width: 240px;
+      height: auto;
+      border-radius: 8px;
+      object-fit: contain;
+    }
+
+    .product-card h3 {
+      margin-top: 12px;
+      font-size: 17px;
+      color: #0f172a;
+    }
+
+    .product-card p {
+      font-size: 13px;
+      color: #64748b;
+      margin: 6px 0 12px 0;
+    }
+
+    /* Enquire Now बटन */
+    .btn-enquire {
+      display: inline-block;
+      background-color: #25d366;
+      color: white;
+      padding: 8px 16px;
+      border-radius: 20px;
+      text-decoration: none;
+      font-size: 13px;
+      font-weight: bold;
+      box-shadow: 0 2px 6px rgba(37, 211, 102, 0.3);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- हेडर आणि लोगो -->
+  <header>
+    <img src="logo.png" alt="Aqua Chaitanya Logo" class="site-logo" onerror="this.style.display='none'">
+    <h2>Aqua Chaitanya RO Services</h2>
+    <p>Pure Water, Healthy Life!</p>
+    <div class="nav-buttons">
+      <a href="#home">Home</a>
+      <a href="#services">Services</a>
+      <a href="#products">Products</a>
+      <a href="#why-us">Why Us</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </header>
+
+  <div class="container">
+    
+    <!-- क्विक एक्शन्स -->
+    <div class="action-buttons">
+      <a href="tel:" class="btn-call">📞 Call Now</a>
+      <a href="https://wa.me/" class="btn-whatsapp">💬 WhatsApp</a>
+    </div>
+
+    <!-- सर्व्हिसेस -->
+    <section id="services">
+      <h2 style="color: #0f172a; margin-bottom: 10px;">Our Key Services</h2>
+      
+      <div class="card">
+        <h3>🏠 Doorstep Home & Commercial Service</h3>
+        <p>Quick and reliable RO repair and maintenance service right at your doorstep. We serve homes and offices across Pimpri-Chinchwad with expert technicians, 100% original parts, and fair pricing.</p>
+      </div>
+
+      <div class="card">
+        <h3>🛒 RO Water Purifier Sales</h3>
+        <p>Get the ideal water purifier customized for the TDS levels in your area. Modern multi-stage purification with mineral boosters to keep your family's drinking water clean, safe, and healthy.</p>
+      </div>
+
+      <div class="card">
+        <h3>🛠️ Annual Maintenance Contracts (AMC)</h3>
+        <p>Enjoy total peace of mind all year long with our flexible AMC plans. Includes regular maintenance checkups, timely filter replacements, and priority support whenever you need help.</p>
+      </div>
+    </section>
+
+    <!-- प्रॉडक्ट्स (इमेजेस + तपशील + Enquire Now बटन) -->
+    <section id="products">
+      <h2 style="color: #0f172a; margin-bottom: 5px;">Our Water Purifiers</h2>
+      <p style="font-size: 13px; color: #64748b; margin-bottom: 15px;">Explore our wide range of commercial and domestic water purifiers:</p>
+
+      <!-- Machine 1 -->
+      <div class="product-card">
+        <img src="ro1.jpg.png" alt="Commercial R.O. Plant">
+        <h3>Commercial R.O. Plant</h3>
+        <p>Lexpure Heavy-Duty Commercial Water Purifier with GTO, GAC, and PP High Capacity Filtration Filters.</p>
+        <a href="https://wa.me/?text=Hi,%20I%20want%20to%20enquire%20about%20Commercial%20R.O.%20Plant" class="btn-enquire">💬 Enquire Now</a>
+      </div>
+
+      <!-- Machine 2 -->
+      <div class="product-card">
+        <img src="ro3.jpg.png" alt="Seron RO Purifier">
+        <h3>Seron RO Purifier</h3>
+        <p>Lexpure Seron Modern Wall-Mount Purifier with Digital LED Indicators and Elegant Copper Finish.</p>
+        <a href="https://wa.me/?text=Hi,%20I%20want%20to%20enquire%20about%20Seron%20RO%20Purifier" class="btn-enquire">💬 Enquire Now</a>
+      </div>
+
+      <!-- Machine 3 -->
+      <div class="product-card">
+        <img src="ro5.jpg.jpg" alt="KENT Grand+ Mineral RO">
+        <h3>KENT Grand+ Mineral RO</h3>
+        <p>Advanced RO + UF + UV + TDS Control System with In-built Filter Change Alarm and Mineral Retainer.</p>
+        <a href="https://wa.me/?text=Hi,%20I%20want%20to%20enquire%20about%20KENT%20Grand%2B%20RO" class="btn-enquire">💬 Enquire Now</a>
+      </div>
+
+      <!-- Machine 4 -->
+      <div class="product-card">
+        <img src="ro6.jpg.png" alt="Eliza Copper Alkaline RO">
+        <h3>Eliza Copper Alkaline RO</h3>
+        <p>Premium Black & Copper Design with Digital LED Display, Alkaline Mineral Booster & Essential Minerals.</p>
+        <a href="https://wa.me/?text=Hi,%20I%20want%20to%20enquire%20about%20Eliza%20Copper%20Alkaline%20RO" class="btn-enquire">💬 Enquire Now</a>
+      </div>
+
+    </section>
+
+  </div>
+
+</body>
+</html>
