@@ -358,3 +358,14 @@ header p {
     background-color: #25d366;
     color: #ffffff;
 }
+/* बटन्स जागेवरच वर-खाली हलण्यासाठी */
+.nav-button {
+  animation: float 2s infinite ease-in-out;
+}
+
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-5px); } /* ५ पिक्सेल वर जाईल */
+  100% { transform: translateY(0px); }
+}
+
