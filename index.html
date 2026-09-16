@@ -438,14 +438,65 @@
 
   </div>
 
-  <!-- ================= AQUA CHAITANYA REVIEWS & FOOTER CODE ================= -->
+  
+                  <!-- ================= COMPLETE AQUA CHAITANYA SECTIONS (ABOUT + REVIEWS + FOOTER) ================= -->
 <style>
-  .ac-wrapper {
+  .ac-full-wrapper {
     font-family: Arial, sans-serif;
     box-sizing: border-box;
   }
   
-  /* Stats Section Styling */
+  /* 1. About Us Section Styling */
+  .ac-about-section {
+    padding: 50px 20px;
+    background-color: #ffffff;
+    color: #2d3748;
+    text-align: center;
+  }
+
+  .ac-about-container {
+    max-width: 900px;
+    margin: 0 auto;
+  }
+
+  .ac-about-container h2 {
+    font-size: 28px;
+    color: #1a202c;
+    margin-bottom: 15px;
+  }
+
+  .ac-about-lead {
+    font-size: 18px;
+    font-weight: 600;
+    color: #0077ff;
+    margin-bottom: 15px;
+  }
+
+  .ac-about-container p {
+    line-height: 1.6;
+    font-size: 15px;
+    color: #4a5568;
+  }
+
+  .ac-about-features {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 25px;
+    text-align: left;
+  }
+
+  .ac-feature-item {
+    background: #f7fafc;
+    border: 1px solid #e2e8f0;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-size: 14px;
+    color: #2d3748;
+  }
+
+  /* 2. Stats & Reviews Section Styling */
   .ac-stats-section {
     text-align: center;
     padding: 40px 20px;
@@ -493,7 +544,7 @@
     font-size: 15px;
   }
 
-  /* Footer & Map Styling */
+  /* 3. Footer & Map Styling */
   .ac-footer {
     background-color: #121619;
     color: #ffffff;
@@ -563,155 +614,34 @@
   }
 </style>
 
-<div class="ac-wrapper">
+<div class="ac-full-wrapper">
   
-  <!-- 1. Customer Reviews & Stats Section -->
-  <section class="ac-stats-section">
-    <div class="ac-tag">🌟 Trusted by our customers</div>
-    <h2 style="margin: 0; color: #1a202c;">Proven Success in Numbers</h2>
-    
-    <div class="ac-stats-grid">
-      <div class="ac-stat-card">
-        <div class="ac-rating">5.00 ★</div>
-        <p>24 Customer Reviews</p>
-      </div>
+  <!-- Section 1: About Us -->
+  <section id="about" class="ac-about-section">
+    <div class="ac-about-container">
+      <h2>About Aqua Chaitanya</h2>
+      <p class="ac-about-lead">
+        आकुर्डी, पिंपरी-चिंचवडमधील वॉटर प्युरिफायर विक्री व सर्व्हिसिंग क्षेत्रातील विश्वसनीय नाव!
+      </p>
+      <p>
+        <strong>AQUA CHAITANYA RO SALE & SERVICE</strong> मध्ये आम्ही तुमच्या कुटुंबाला १००% शुद्ध आणि सुरक्षित पिण्याचे पाणी पुरवण्यासाठी कटिबद्ध आहोत. सर्व प्रमुख ब्रँड्सचे RO, UV आणि Alkaline प्युरिफायर्सची विक्री, स्पेयर पार्ट्स, फिल्टर रिप्लेसमेंट आणि मेंटेनन्स सर्व्हिस आम्ही अत्यंत वाजवी दरात पुरवतो.
+      </p>
       
-      <div class="ac-stat-card">
-        <div class="ac-count">600+</div>
-        <p>Happy Customers</p>
+      <div class="ac-about-features">
+        <div class="ac-feature-item">
+          ✔️ <strong>Expert Service:</strong> अनुभवी तंत्रज्ञांद्वारे डोअरस्टेप सर्व्हिस.
+        </div>
+        <div class="ac-feature-item">
+          ✔️ <strong>Genuine Spares:</strong> सर्व ओरिजिनल फिल्टर आणि स्पेयर पार्ट्स.
+        </div>
+        <div class="ac-feature-item">
+          ✔️ <strong>Quick Support:</strong> एका कॉलवर त्वरित रिपेअरिंग सर्व्हिस.
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- 2. Footer Section with Google Map -->
-  <!-- ================= AQUA CHAITANYA REVIEWS & FOOTER CODE ================= -->
-<style>
-  .ac-wrapper {
-    font-family: Arial, sans-serif;
-    box-sizing: border-box;
-  }
-  
-  /* Stats Section Styling */
-  .ac-stats-section {
-    text-align: center;
-    padding: 40px 20px;
-    background-color: #f9f9f9;
-  }
-
-  .ac-tag {
-    display: inline-block;
-    background: #ffffff;
-    padding: 6px 16px;
-    border-radius: 20px;
-    font-size: 14px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.08);
-    margin-bottom: 15px;
-    color: #333;
-  }
-
-  .ac-stats-grid {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-    margin-top: 20px;
-  }
-
-  .ac-stat-card {
-    background: #ffffff;
-    border: 1px solid #e2e8f0;
-    border-radius: 12px;
-    padding: 25px;
-    width: 260px;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.03);
-  }
-
-  .ac-rating, .ac-count {
-    font-size: 30px;
-    font-weight: bold;
-    color: #0077ff;
-    margin-bottom: 5px;
-  }
-
-  .ac-stat-card p {
-    margin: 0;
-    color: #4a5568;
-    font-size: 15px;
-  }
-
-  /* Footer & Map Styling */
-  .ac-footer {
-    background-color: #121619;
-    color: #ffffff;
-    padding: 40px 20px 20px 20px;
-  }
-
-  .ac-footer-content {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 40px;
-    max-width: 1000px;
-    margin: 0 auto;
-    text-align: left;
-  }
-
-  .ac-quick-links, .ac-contact-us {
-    flex: 1;
-    min-width: 250px;
-  }
-
-  .ac-footer h3 {
-    font-size: 20px;
-    margin-bottom: 15px;
-    color: #ffffff;
-  }
-
-  .ac-quick-links ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-
-  .ac-quick-links li {
-    margin-bottom: 10px;
-  }
-
-  .ac-quick-links a {
-    color: #a0aec0;
-    text-decoration: none;
-    transition: color 0.2s;
-  }
-
-  .ac-quick-links a:hover {
-    color: #ffffff;
-  }
-
-  .ac-contact-us p {
-    color: #cbd5e0;
-    margin: 6px 0;
-    line-height: 1.5;
-  }
-
-  .ac-map-container {
-    margin-top: 15px;
-    border-radius: 8px;
-    overflow: hidden;
-    border: 1px solid #2d3748;
-  }
-
-  .ac-copyright {
-    text-align: center;
-    margin-top: 30px;
-    border-top: 1px solid #2d3748;
-    padding-top: 15px;
-    color: #718096;
-    font-size: 14px;
-  }
-</style>
-
-<div class="ac-wrapper">
-  
-  <!-- 1. Customer Reviews & Stats Section -->
+  <!-- Section 2: Customer Reviews & Stats (Updated to 800+ Happy Customers) -->
   <section class="ac-stats-section">
     <div class="ac-tag">🌟 Trusted by our customers</div>
     <h2 style="margin: 0; color: #1a202c;">Proven Success in Numbers</h2>
@@ -723,13 +653,13 @@
       </div>
       
       <div class="ac-stat-card">
-        <div class="ac-count">600+</div>
+        <div class="ac-count">800+</div>
         <p>Happy Customers</p>
       </div>
     </div>
   </section>
 
-  <!-- 2. Footer Section with Exact Map & Address -->
+  <!-- Section 3: Footer with Exact Aqua Chaitanya Map -->
   <footer class="ac-footer">
     <div class="ac-footer-content">
       
@@ -749,7 +679,7 @@
         <p>Near Bijali Nagar Road, Sairaj Colony, Akurdi, Pimpri-Chinchwad, Maharashtra 411033</p>
         <p>📞 +91 86053 50767</p>
         
-        <!-- Embedded Exact Location Map -->
+        <!-- Embedded Location Map -->
         <div class="ac-map-container">
           <iframe 
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3780.842777178044!2d73.7748!3d18.6483!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2b9e1c25140e5%3A0x6b44a475a890e0b3!2sAQUA%20CHAITANYA%20RO%20SALE%20%26%20SERVICE!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin" 
