@@ -394,7 +394,7 @@
     </section>
 
     <!-- Why Us (आम्हालाच का निवडावे) -->
-    <section id="why-us">
+    <section id="about">
       <h2 style="color: #0f172a; margin-top: 25px; margin-bottom: 10px;">Why Choose Us?</h2>
       <div class="card">
         <ul>
@@ -439,65 +439,7 @@
   </div>
 
   
-                  <!-- ================= COMPLETE AQUA CHAITANYA SECTIONS (ABOUT + REVIEWS + FOOTER) ================= -->
-<style>
-  .ac-full-wrapper {
-    font-family: Arial, sans-serif;
-    box-sizing: border-box;
-  }
-  
-  /* 1. About Us Section Styling */
-  .ac-about-section {
-    padding: 50px 20px;
-    background-color: #ffffff;
-    color: #2d3748;
-    text-align: center;
-  }
-
-  .ac-about-container {
-    max-width: 900px;
-    margin: 0 auto;
-  }
-
-  .ac-about-container h2 {
-    font-size: 28px;
-    color: #1a202c;
-    margin-bottom: 15px;
-  }
-
-  .ac-about-lead {
-    font-size: 18px;
-    font-weight: 600;
-    color: #0077ff;
-    margin-bottom: 15px;
-  }
-
-  .ac-about-container p {
-    line-height: 1.6;
-    font-size: 15px;
-    color: #4a5568;
-  }
-
-  .ac-about-features {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 15px;
-    margin-top: 25px;
-    text-align: left;
-  }
-
-  .ac-feature-item {
-    background: #f7fafc;
-    border: 1px solid #e2e8f0;
-    padding: 12px 20px;
-    border-radius: 8px;
-    font-size: 14px;
-    color: #2d3748;
-  }
-
-  /* 2. Stats & Reviews Section Styling */
-  .ac-stats-section {
+                  
     text-align: center;
     padding: 40px 20px;
     background-color: #f9f9f9;
@@ -631,17 +573,152 @@
         <div class="ac-feature-item">
           ✔️ <strong>Expert Service:</strong> अनुभवी तंत्रज्ञांद्वारे डोअरस्टेप सर्व्हिस.
         </div>
-        <div class="ac-feature-item">
-          ✔️ <strong>Genuine Spares:</strong> सर्व ओरिजिनल फिल्टर आणि स्पेयर पार्ट्स.
-        </div>
-        <div class="ac-feature-item">
-          ✔️ <strong>Quick Support:</strong> एका कॉलवर त्वरित रिपेअरिंग सर्व्हिस.
-        </div>
-      </div>
-    </div>
-  </section>
+<!-- ================= AQUA CHAITANYA REVIEWS & FOOTER (WITH HOVER EFFECTS) ================= -->
+<style>
+  .ac-full-wrapper {
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+  }
 
-  <!-- Section 2: Customer Reviews & Stats (Updated to 800+ Happy Customers) -->
+  /* Stats & Reviews Section with Animated Hover Effect */
+  .ac-stats-section {
+    text-align: center;
+    padding: 45px 20px;
+    background-color: #f8fafc;
+  }
+
+  .ac-tag {
+    display: inline-block;
+    background: #ffffff;
+    padding: 6px 18px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 600;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.06);
+    margin-bottom: 15px;
+    color: #0077ff;
+  }
+
+  .ac-stats-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 25px;
+  }
+
+  /* Card Animated Hover Effect */
+  .ac-stat-card {
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 16px;
+    padding: 30px 20px;
+    width: 250px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.04);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+    cursor: pointer;
+  }
+
+  /* Hover Action: Card Lifts & Glows */
+  .ac-stat-card:hover {
+    transform: translateY(-8px) scale(1.03);
+    box-shadow: 0 12px 24px rgba(0, 119, 255, 0.15);
+    border-color: #0077ff;
+  }
+
+  .ac-rating, .ac-count {
+    font-size: 34px;
+    font-weight: 800;
+    color: #0077ff;
+    margin-bottom: 5px;
+    transition: color 0.3s ease;
+  }
+
+  .ac-stat-card:hover .ac-rating, 
+  .ac-stat-card:hover .ac-count {
+    color: #0056b3;
+  }
+
+  .ac-stat-card p {
+    margin: 0;
+    color: #4a5568;
+    font-size: 15px;
+    font-weight: 500;
+  }
+
+  /* Footer & Map Styling */
+  .ac-footer {
+    background-color: #121619;
+    color: #ffffff;
+    padding: 40px 20px 20px 20px;
+  }
+
+  .ac-footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: left;
+  }
+
+  .ac-quick-links, .ac-contact-us {
+    flex: 1;
+    min-width: 250px;
+  }
+
+  .ac-footer h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: #ffffff;
+  }
+
+  .ac-quick-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .ac-quick-links li {
+    margin-bottom: 10px;
+  }
+
+  .ac-quick-links a {
+    color: #a0aec0;
+    text-decoration: none;
+    transition: color 0.2s;
+  }
+
+  .ac-quick-links a:hover {
+    color: #ffffff;
+  }
+
+  .ac-contact-us p {
+    color: #cbd5e0;
+    margin: 6px 0;
+    line-height: 1.5;
+  }
+
+  .ac-map-container {
+    margin-top: 15px;
+    border-radius: 8px;
+    overflow: hidden;
+    border: 1px solid #2d3748;
+  }
+
+  .ac-copyright {
+    text-align: center;
+    margin-top: 30px;
+    border-top: 1px solid #2d3748;
+    padding-top: 15px;
+    color: #718096;
+    font-size: 14px;
+  }
+</style>
+
+<div class="ac-full-wrapper">
+  
+  <!-- 1. Reviews & Stats Section (With Hover Animation) -->
   <section class="ac-stats-section">
     <div class="ac-tag">🌟 Trusted by our customers</div>
     <h2 style="margin: 0; color: #1a202c;">Proven Success in Numbers</h2>
@@ -659,7 +736,7 @@
     </div>
   </section>
 
-  <!-- Section 3: Footer with Exact Aqua Chaitanya Map -->
+  <!-- 2. Footer Section with Exact Aqua Chaitanya Map -->
   <footer class="ac-footer">
     <div class="ac-footer-content">
       
