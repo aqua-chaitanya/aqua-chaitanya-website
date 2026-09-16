@@ -439,86 +439,7 @@
   </div>
 
     
-    <style>
-  .ac-full-wrapper {
-    font-family: Arial, sans-serif;
-    box-sizing: border-box;
-  }
-
-  .ac-stats-section {
-    text-align: center;
-    padding: 45px 20px;
-    background-color: #f8fafc;
-  }
-
-  .ac-tag {
-    display: inline-block;
-    background: #ffffff;
-    padding: 6px 18px;
-    border-radius: 20px;
-    font-size: 14px;
-    font-weight: 600;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.06);
-    margin-bottom: 15px;
-    color: #0077ff;
-  }
-
-  .ac-stats-grid {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 25px;
-    margin-top: 25px;
-  }
-
-  .ac-stat-card {
-    background: #ffffff;
-    border: 1px solid #e2e8f0;
-    border-radius: 16px;
-    padding: 30px 20px;
-    width: 250px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.04);
-    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
-    cursor: pointer;
-  }
-
-  .ac-stat-card:hover {
-    transform: translateY(-8px) scale(1.03);
-    box-shadow: 0 12px 24px rgba(0, 119, 255, 0.15);
-    border-color: #0077ff;
-  }
-
-  .ac-rating, .ac-count {
-    font-size: 34px;
-    font-weight: 800;
-    color: #0077ff;
-    margin-bottom: 5px;
-  }
-
-  .ac-stat-card p {
-    margin: 0;
-    color: #4a5568;
-    font-size: 15px;
-    font-weight: 500;
-  }
-
-  .ac-footer {
-    background-color: #121619;
-    color: #ffffff;
-    padding: 40px 20px 20px 20px;
-  }
-
-  .ac-footer-content {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 40px;
-    max-width: 1000px;
-    margin: 0 auto;
-    text-align: left;
-  }
-
-  .ac-quick-links, .ac-contact-us {
-    flex: 1;
+        flex: 1;
     min-width: 250px;
   }
 
@@ -615,14 +536,245 @@
             style="border:0;" 
             allowfullscreen="" 
             loading="lazy">
+<!-- ================= AQUA CHAITANYA REVIEWS & FOOTER (WITH NUMBER COUNTER ANIMATION) ================= -->
+<style>
+  .ac-full-wrapper {
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+  }
+
+  /* Stats Section */
+  .ac-stats-section {
+    text-align: center;
+    padding: 45px 20px;
+    background-color: #f8fafc;
+  }
+
+  .ac-tag {
+    display: inline-block;
+    background: #ffffff;
+    padding: 6px 18px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 600;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.06);
+    margin-bottom: 15px;
+    color: #0077ff;
+  }
+
+  .ac-stats-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 25px;
+  }
+
+  .ac-stat-card {
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 16px;
+    padding: 30px 20px;
+    width: 250px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.04);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .ac-stat-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 24px rgba(0, 119, 255, 0.15);
+  }
+
+  .ac-rating, .ac-count {
+    font-size: 36px;
+    font-weight: 800;
+    color: #0077ff;
+    margin-bottom: 5px;
+  }
+
+  .ac-stat-card p {
+    margin: 0;
+    color: #4a5568;
+    font-size: 15px;
+    font-weight: 500;
+  }
+
+  /* Footer Section */
+  .ac-footer {
+    background-color: #121619;
+    color: #ffffff;
+    padding: 40px 20px 20px 20px;
+  }
+
+  .ac-footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: left;
+  }
+
+  .ac-quick-links, .ac-contact-us {
+    flex: 1;
+    min-width: 250px;
+  }
+
+  .ac-footer h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: #ffffff;
+  }
+
+  .ac-quick-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .ac-quick-links li {
+    margin-bottom: 10px;
+  }
+
+  .ac-quick-links a {
+    color: #a0aec0;
+    text-decoration: none;
+    transition: color 0.2s;
+  }
+
+  .ac-quick-links a:hover {
+    color: #ffffff;
+  }
+
+  .ac-contact-us p {
+    color: #cbd5e0;
+    margin: 6px 0;
+    line-height: 1.5;
+  }
+
+  .ac-map-container {
+    margin-top: 15px;
+    border-radius: 8px;
+    overflow: hidden;
+    border: 1px solid #2d3748;
+  }
+
+  .ac-copyright {
+    text-align: center;
+    margin-top: 30px;
+    border-top: 1px solid #2d3748;
+    padding-top: 15px;
+    color: #718096;
+    font-size: 14px;
+  }
+</style>
+
+<div class="ac-full-wrapper">
+  
+  <!-- Number Counter Stats Section -->
+  <section class="ac-stats-section" id="counter-section">
+    <div class="ac-tag">🌟 Trusted by our customers</div>
+    <h2 style="margin: 0; color: #1a202c;">Proven Success in Numbers</h2>
+    
+    <div class="ac-stats-grid">
+      <div class="ac-stat-card">
+        <div class="ac-rating"><span class="ac-counter" data-target="4.9" data-type="decimal">0</span> ★</div>
+        <p><span class="ac-counter" data-target="73" data-type="integer">0</span> Customer Reviews</p>
+      </div>
+      
+      <div class="ac-stat-card">
+        <div class="ac-count"><span class="ac-counter" data-target="800" data-type="integer">0</span>+</div>
+        <p>Happy Customers</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <footer class="ac-footer">
+    <div class="ac-footer-content">
+      
+      <div class="ac-quick-links">
+        <h3>Quick links</h3>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="ac-contact-us">
+        <h3>Contact us</h3>
+        <p><strong>AQUA CHAITANYA RO SALE & SERVICE</strong></p>
+        <p>Near Bijali Nagar Road, Sairaj Colony, Akurdi, Pimpri-Chinchwad, Maharashtra 411033</p>
+        <p>📞 +91 86053 50767</p>
+        
+        <div class="ac-map-container">
+          <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3780.842777178044!2d73.7748!3d18.6483!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2b9e1c25140e5%3A0x6b44a475a890e0b3!2sAQUA%20CHAITANYA%20RO%20SALE%20%26%20SERVICE!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin" 
+            width="100%" 
+            height="180" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy">
           </iframe>
         </div>
       </div>
+
     </div>
     
     <p class="ac-copyright">Copyrights © 2026 AQUA CHAITANYA RO SALE & SERVICE. All Rights Reserved.</p>
   </footer>
+
 </div>
+
+<!-- Number Increase Script -->
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const counters = document.querySelectorAll(".ac-counter");
+    let started = false;
+
+    function startCounter() {
+      const section = document.getElementById("counter-section");
+      if (!section) return;
+      const position = section.getBoundingClientRect().top;
+      const screenHeight = window.innerHeight;
+
+      if (position < screenHeight && !started) {
+        started = true;
+        counters.forEach((counter) => {
+          const target = +counter.getAttribute("data-target");
+          const type = counter.getAttribute("data-type");
+          const duration = 1500; // Animation time (1.5 seconds)
+          const startTime = performance.now();
+
+          function updateNumber(currentTime) {
+            const elapsedTime = currentTime - startTime;
+            const progress = Math.min(elapsedTime / duration, 1);
+
+            if (type === "decimal") {
+              counter.innerText = (progress * target).toFixed(1);
+            } else {
+              counter.innerText = Math.floor(progress * target);
+            }
+
+            if (progress < 1) {
+              requestAnimationFrame(updateNumber);
+            } else {
+              counter.innerText = target;
+            }
+          }
+
+          requestAnimationFrame(updateNumber);
+        });
+      }
+    }
+
+    window.addEventListener("scroll", startCounter);
+    startCounter();
+  });
+</script>
+<!-- ================= END CODE ================= -->
 
 </div>
 <!-- ================= END CODE ================= -->
