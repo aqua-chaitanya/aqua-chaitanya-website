@@ -778,75 +778,87 @@
       
   </section>
 
-  <!DOCTYPE html>
+   <!DOCTYPE html>
 <html lang="mr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aqua Chaitanya</title>
+    <title>Aqua Chaitanya - RO Sale & Service</title>
     
-    <!-- 📍 पुणे अवेलेबिलिटी बॅनर्ससाठी CSS (हा भाग <head> मध्ये टाका) -->
     <style>
-    /* 📍 पुणे बॅनरची अतिरिक्त जागा आणि मार्जिन कमी करण्यासाठी */
-    .pune-banner {
-        background: linear-gradient(135deg, #007bff, #00d2ff);
-        color: #ffffff;
-        text-align: center;
-        padding: 12px 15px;
-        font-size: 16px;
-        font-weight: bold;
-        border-radius: 8px;
-        margin: 10px auto; /* वरचा गॅप कमी करण्यासाठी मार्जिन कमी केली आहे */
-        width: 90%;
-        max-width: 600px;
-        box-shadow: 0 4px 15px rgba(0, 123, 255, 0.3);
-        animation: pulseGlow 2s infinite ease-in-out;
-    }
+        /* 📍 पुणे बॅनर - वरची अतिरिक्त जागा पूर्ण काढण्यासाठी margin 0 केली आहे */
+        .pune-banner {
+            background: linear-gradient(135deg, #007bff, #00d2ff);
+            color: #ffffff;
+            text-align: center;
+            padding: 12px 15px;
+            font-size: 16px;
+            font-weight: bold;
+            border-radius: 8px;
+            margin: 5px auto 10px auto !important;
+            width: 90%;
+            max-width: 600px;
+            box-shadow: 0 4px 15px rgba(0, 123, 255, 0.3);
+            animation: pulseGlow 2s infinite ease-in-out;
+        }
 
-    @keyframes pulseGlow {
-        0% { transform: scale(1); }
-        50% { transform: scale(1.02); }
-        100% { transform: scale(1); }
-    }
+        @keyframes pulseGlow {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.02); }
+            100% { transform: scale(1); }
+        }
 
-    /* 📞 Contact Us सेक्शनचा पांढरट प्रॉब्लेम सोडवण्यासाठी (रंग ठळक ब्लॅक/डार्क केला आहे) */
-    .contact-section {
-        background-color: #ffffff !important; /* बॅकग्राउंड पूर्ण पांढरे स्पष्ट ठेवली आहे */
-        color: #222222 !important;            /* टेक्स्टचा रंग गडद काळा केला आहे जेणेकरून वाचता येईल */
-        text-align: center;
-        padding: 20px 15px;
-        margin-top: 0px;
-    }
+        /* 📞 Contact Us सेक्शन - पांढरटपणा पूर्ण काढून स्पष्ट गडद रंग दिला आहे */
+        .contact-section {
+            background-color: #ffffff !important;
+            color: #111111 !important;
+            text-align: center;
+            padding: 20px 15px !important;
+            margin-top: 0px !important;
+        }
 
-    .contact-section h2 {
-        color: #111111;
-        font-size: 22px;
-        margin-bottom: 10px;
-    }
+        .contact-section h2 {
+            color: #000000 !important;
+            font-size: 22px;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
 
-    .contact-info h3 {
-        font-size: 16px;
-        color: #0056b3;
-        margin-bottom: 8px;
-    }
+        .contact-info h3 {
+            font-size: 16px;
+            color: #0056b3 !important;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
 
-    .contact-info p {
-        font-size: 14px;
-        color: #444444 !important; /* पत्ता आणि नंबर स्पष्ट दिसेल */
-        margin: 5px 0;
-    }
-</style>
-
+        .contact-info p {
+            font-size: 14px;
+            color: #333333 !important;
+            margin: 5px 0;
+            font-weight: 600;
+        }
+    </style>
 </head>
 <body>
 
-    <!-- 📍 पुणे अवेलेबिलिटी बॅनर (हा कोड 'Contact us' च्या अगदी वर <body> मध्ये पेस्ट करा) -->
+    <!-- 📍 पुणे अवेलेबिलिटी बॅनर -->
     <div class="pune-banner">
         <span>🚀 We are available at all locations in Pune!</span>
     </div>
 
+    <!-- Contact us Section -->
+    <section class="contact-section">
+        <h2>Contact us</h2>
+        <div class="contact-info">
+            <h3>AQUA CHAITANYA RO SALE & SERVICE</h3>
+            <p>Near Bijali Nagar Road, Sairaj Colony, Akurdi, Pimpri-Chinchwad, Maharashtra 411033</p>
+            <p>📞 +91 86053 50767</p>
+        </div>
+    </section>
+
 </body>
 </html>
+
 
       
       
