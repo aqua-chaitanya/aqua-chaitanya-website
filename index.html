@@ -897,19 +897,66 @@
                 <option value="other">Other</option>
             </select>
         </div>
+      
+<!-- Book RO Service Section -->
+<div style="background: linear-gradient(135deg, #f0f4ff 0%, #e8f8f5 100%); padding: 40px 20px; border-radius: 24px; max-width: 500px; margin: 30px auto; font-family: 'Poppins', sans-serif; box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);">
+    
+    <!-- Attractive Header Title at the Top -->
+    <div style="text-align: center; margin-bottom: 30px;">
+        <h2 style="color: #0b4f6c; font-size: 26px; font-weight: 700; margin: 0 0 8px 0; letter-spacing: 0.5px;">Book RO Service</h2>
+        <p style="color: #555555; font-size: 14px; margin: 0;">Fill out the details below for quick water purifier service</p>
+    </div>
+
+    <!-- Form -->
+    <form id="roServiceForm">
+        
+        <div style="margin-bottom: 22px;">
+            <label style="display: block; font-weight: 600; color: #2c3e50; margin-bottom: 8px; font-size: 14px;">Full Name *</label>
+            <input type="text" placeholder="Enter your full name" required style="width: 100%; padding: 14px 16px; border: 2px solid #e0e0e0; border-radius: 12px; font-size: 14px; background-color: #ffffff; box-sizing: border-box; outline: none; transition: all 0.3s;">
+        </div>
+
+        <div style="margin-bottom: 22px;">
+            <label style="display: block; font-weight: 600; color: #2c3e50; margin-bottom: 8px; font-size: 14px;">Mobile Number *</label>
+            <input type="tel" placeholder="10-digit mobile number" pattern="[0-9]{10}" required style="width: 100%; padding: 14px 16px; border: 2px solid #e0e0e0; border-radius: 12px; font-size: 14px; background-color: #ffffff; box-sizing: border-box; outline: none; transition: all 0.3s;">
+        </div>
+
+        <div style="margin-bottom: 22px;">
+            <label style="display: block; font-weight: 600; color: #2c3e50; margin-bottom: 8px; font-size: 14px;">Area / Locality *</label>
+            <input type="text" placeholder="e.g. Akurdi, Pune" required style="width: 100%; padding: 14px 16px; border: 2px solid #e0e0e0; border-radius: 12px; font-size: 14px; background-color: #ffffff; box-sizing: border-box; outline: none; transition: all 0.3s;">
+        </div>
+
+        <div style="margin-bottom: 22px;">
+            <label style="display: block; font-weight: 600; color: #2c3e50; margin-bottom: 8px; font-size: 14px;">Service Required *</label>
+            <select required style="width: 100%; padding: 14px 16px; border: 2px solid #e0e0e0; border-radius: 12px; font-size: 14px; background-color: #ffffff; box-sizing: border-box; outline: none; transition: all 0.3s; cursor: pointer;">
+                <option value="">Select service</option>
+                <option value="repair">RO Repair / Maintenance</option>
+                <option value="installation">Installation / Uninstallation</option>
+                <option value="filter">Filter Change</option>
+            </select>
+        </div>
+
+        <div style="margin-bottom: 22px;">
+            <label style="display: block; font-weight: 600; color: #2c3e50; margin-bottom: 8px; font-size: 14px;">RO Brand *</label>
+            <select required style="width: 100%; padding: 14px 16px; border: 2px solid #e0e0e0; border-radius: 12px; font-size: 14px; background-color: #ffffff; box-sizing: border-box; outline: none; transition: all 0.3s; cursor: pointer;">
+                <option value="">Select brand</option>
+                <option value="kent">Kent</option>
+                <option value="aquaguard">Aquaguard</option>
+                <option value="livpure">Livpure</option>
+                <option value="other">Other</option>
+            </select>
+        </div>
 
         <div style="margin-bottom: 25px;">
             <label style="display: block; font-weight: 600; color: #2c3e50; margin-bottom: 8px; font-size: 14px;">Message</label>
             <textarea placeholder="Describe the issue (optional)" style="width: 100%; padding: 14px 16px; border: 2px solid #e0e0e0; border-radius: 12px; font-size: 14px; background-color: #ffffff; box-sizing: border-box; outline: none; resize: vertical; height: 100px; transition: all 0.3s;"></textarea>
         </div>
 
-        <button type="submit" style="width: 100%; background: linear-gradient(135deg, #0077b6, #00b4d8); color: white; border: none; padding: 16px; border-radius: 30px; font-size: 16px; font-weight: 600; cursor: pointer; box-shadow: 0 6px 20px rgba(0, 119, 182, 0.4); transition: transform 0.2s, opacity 0.2s;">Book RO Service</button>
+        <!-- Submit Button at the bottom of form -->
+        <button type="submit" style="width: 100%; background: linear-gradient(135deg, #0077b6, #00b4d8); color: white; border: none; padding: 16px; border-radius: 30px; font-size: 16px; font-weight: 600; cursor: pointer; box-shadow: 0 6px 20px rgba(0, 119, 182, 0.4); transition: transform 0.2s, opacity 0.2s;">Submit Request</button>
 
     </form>
 </div>
-
-  
-
+      
     <!-- Contact us Section -->
     <section class="contact-section">
         <h2>Contact us</h2>
