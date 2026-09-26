@@ -849,6 +849,58 @@
     <div class="pune-banner">
         <span>🚀 We are available at all locations in Pune!</span>
     </div>
+  <!-- Book RO Service Section -->
+<div class="booking-section-container">
+    <div class="service-header">
+        <h2>Book RO Service</h2>
+        <p>Fill out the form below to book your water purifier service or repair</p>
+    </div>
+
+    <form id="roServiceForm" class="ro-form">
+        <div class="form-group">
+            <label>Full Name *</label>
+            <input type="text" placeholder="Enter your full name" required>
+        </div>
+
+        <div class="form-group">
+            <label>Mobile Number *</label>
+            <input type="tel" placeholder="10-digit mobile number" pattern="[0-9]{10}" required>
+        </div>
+
+        <div class="form-group">
+            <label>Area / Locality *</label>
+            <input type="text" placeholder="e.g. Akurdi, Pune" required>
+        </div>
+
+        <div class="form-group">
+            <label>Service Required *</label>
+            <select required>
+                <option value="">Select service</option>
+                <option value="repair">RO Repair / Maintenance</option>
+                <option value="installation">Installation / Uninstallation</option>
+                <option value="filter">Filter Change</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label>RO Brand *</label>
+            <select required>
+                <option value="">Select brand</option>
+                <option value="kent">Kent</option>
+                <option value="aquaguard">Aquaguard</option>
+                <option value="livpure">Livpure</option>
+                <option value="other">Other</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label>Message</label>
+            <textarea placeholder="Describe the issue (optional)"></textarea>
+        </div>
+
+        <button type="submit" class="submit-btn">Book RO Service</button>
+    </form>
+</div>
   
 
     <!-- Contact us Section -->
