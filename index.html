@@ -906,7 +906,7 @@
         </div>
 
         <!-- Submit Button at the bottom of form -->
-        <button type="submit" style="width: 100%; background: linear-gradient(135deg, #0077b6, #00b4d8); color: white; border: none; padding: 16px; border-radius: 30px; font-size: 16px; font-weight: 600; cursor: pointer; box-shadow: 0 6px 20px rgba(0, 119, 182, 0.4); transition: transform 0.2s, opacity 0.2s;">Submit Request</button>
+        <button type="button" onclick="sendToWhatsApp()" style="width: 100%; background: linear-gradient(135deg, #0077b6, #00b4d8); color: white; border: none; padding: 16px; border-radius: 30px; font-size: 16px; font-weight: 600; cursor: pointer; box-shadow: 0 6px 20px rgba(0, 119, 182, 0.4); transition: transform 0.2s, opacity 0.2s;">Submit Request</button>
 
     </form>
 </div>
@@ -946,6 +946,33 @@
 
 </div>
 
+<script>
+    function sendToWhatsApp() {
+        let whatsappNumber = "918605350767";
 
+        let mobile = document.getElementById('mobile').value;
+        let area = document.getElementById('area').value;
+        let service = document.getElementById('service').value;
+        let brand = document.getElementById('brand').value;
+        let message = document.getElementById('message').value;
+
+        if (!mobile || !area || !service || !brand) {
+            alert("कृपया सर्व आवश्यक माहिती भरा.");
+            return;
+        }
+
+        let text = `नमस्कार, मला RO Service बुक करायची आहे:%0A%0A` +
+                   `📱 Mobile: ${mobile}%0A` +
+                   `📍 Area: ${area}%0A` +
+                   `🛠️ Service: ${service}%0A` +
+                   `🏷️ Brand: ${brand}%0A` +
+                   `💬 Message: ${message || 'N/A'}`;
+
+        let url = `https://wa.me/${whatsappNumber}?text=${text}`;
+        window.open(url, '_blank').focus();
+    }
+      </script>
+  
 </body>
+  
 </html>
