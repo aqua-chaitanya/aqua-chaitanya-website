@@ -379,3 +379,9 @@ h1, h2, h3, .main-heading {
 .welcome-heading {
     font-family: 'Playball', cursive !important;
 }
+/* --- परिच्छेद (Article/Paragraph) ची साईज मोठी करण्यासाठी --- */
+p {
+    font-size: 17px !important; /* हा आकडा गरजेनुसार 18px किंवा 19px करू शकता */
+    line-height: 1.6 !important; /* ओळींमधील अंतर व्यवस्थित ठेवण्यासाठी */
+}
+
