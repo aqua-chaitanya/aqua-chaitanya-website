@@ -369,17 +369,13 @@ header p {
   100% { transform: translateY(0px); }
 }
 
-/* --- Aqua Chaitanya New Fonts --- */
-
-/* १. मुख्य नाव (Aqua Chaitanya RO Services) साठी */
-.main-heading {
-    font-family: 'Moralana', serif !important;
+//* फक्त मुख्य नावावर आणि हेडिंग्सवर Moralala फॉन्ट राहिल */
+h1, h2, h3, .main-heading {
+    font-family: 'Moralala', serif !important;
     font-weight: 700 !important;
-    letter-spacing: 1px !important;
 }
 
-/* २. खालची ओळ (Welcome to the World...) साठी */
+/* Welcome ओळीसाठी Playball फॉन्ट */
 .welcome-heading {
     font-family: 'Playball', cursive !important;
-    font-size: 24px !important;
 }
