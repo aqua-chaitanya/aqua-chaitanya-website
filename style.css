@@ -10,6 +10,9 @@ body {
     background-color: #f1f5f9;
     color: #0f172a;
     line-height: 1.6;
+    background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
+    
+    
 }
 
 /* --- Header Section (Blue Gradient) --- */
