@@ -23,8 +23,6 @@ h1, .business-name, .logo-title {
     text-align: center;
   }
 
-
-    
     {
       box-sizing: border-box;
       margin: 0;
@@ -343,8 +341,6 @@ h1, .business-name, .logo-title {
   }
 </style>
 
-
-
   <!-- ३. Green WhatsApp Bounce Button (लांब मेसेजसह) -->
   <a href="https://wa.me/918605350767?text=Hi%20Aqua%20Chaitanya,%20I%20want%20to%20inquire%20about%20your%20RO%20purifiers,%20services,%20and%20current%20offers.%20Please%20send%20me%20more%20details." target="_blank" style="display: inline-flex; align-items: center; justify-content: center; gap: 8px; background: linear-gradient(135deg, #25D366, #128C7E); color: #ffffff !important; font-weight: 700; font-size: 15px; padding: 12px 24px; border-radius: 30px; text-decoration: none !important; box-shadow: 0 4px 15px rgba(37, 211, 102, 0.4); cursor: pointer; animation: whatsappBounce 2s infinite ease-in-out;">
     <svg width="20" height="20" viewBox="0 0 24 24" fill="white">
@@ -608,9 +604,6 @@ h1, .business-name, .logo-title {
     }
   </style>
 </head>
-
-
-  
 
     <!-- Why Choose Us Section -->
     <h2 class="section-title" id="about">Why Choose Us?</h2>
@@ -1462,51 +1455,7 @@ h1, .business-name, .logo-title {
 }
 
 </style>
-<script>
 
-document.addEventListener("DOMContentLoaded", function () {
-
-    const serviceCards = document.querySelectorAll(".service-card");
-
-    serviceCards.forEach((card, index) => {
-
-        // Alternate Left / Right
-        if (index % 2 === 0) {
-            card.classList.add("from-left");
-        } else {
-            card.classList.add("from-right");
-        }
-
-    });
-
-    const observer = new IntersectionObserver(
-        function (entries, observer) {
-
-            entries.forEach(function (entry) {
-
-                if (entry.isIntersecting) {
-
-                    entry.target.classList.add("show");
-
-                    observer.unobserve(entry.target);
-
-                }
-
-            });
-
-        },
-        {
-            threshold: 0.15
-        }
-    );
-
-    serviceCards.forEach(function (card) {
-        observer.observe(card);
-    });
-
-});
-
-</script>
   
 </body>
   
