@@ -1,6 +1,7 @@
 /* --- Global Reset & Font --- */
 * {
     box-sizing: border-box;
+    border-radius: 0px;
     margin: 0;
     padding: 0;
 }
@@ -17,8 +18,9 @@ header {
     background: linear-gradient(180deg, #0284c7 0%, #0369a1 100%);
     color: #ffffff;
     text-align: center;
-    padding: 10px 14px 16px 16px;
-    box-shadow: 0 4px 15px rgba(2, 132, 199, 0.2);
+    padding: 10px 12px 14px 14px;
+    broder: none;
+    box-shadow: none;
 }
 
 .logo {
