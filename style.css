@@ -386,40 +386,18 @@ p {
     font-size: 17px !important; /* हा आकडा गरजेनुसार 18px किंवा 19px करू शकता */
     line-height: 1.6 !important; /* ओळींमधील अंतर व्यवस्थित ठेवण्यासाठी */
 }
-/* कॉमन बटण स्टाईल */
-.float-btn {
+/* WhatsApp बटण डाव्या बाजूला फिक्स करण्यासाठी */
+.whatsapp-btn {
     position: fixed;
-    width: 55px;
-    height: 55px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    font-size: 24px;
-    text-decoration: none;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    bottom: 20px;
+    left: 20px;
     z-index: 1000;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* माउस नेल्यास किंवा टच केल्यावर इफेक्ट */
-.float-btn:hover {
-    transform: scale(1.1);
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+/* Call Us Now बटण उजव्या बाजूला फिक्स करण्यासाठी */
+.call-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
 }
-
-/* १. व्हॉट्सॲप बटण - डाव्या बाजूला आणि थोडं वर */
-.whatsapp-float {
-    bottom: 90px; /* खालून अंतर */
-    left: 20px;  /* डाव्या बाजूने अंतर */
-    background-color: #25d366;
-}
-
-/* २. कॉलिंग बटण - उजव्या बाजूला आणि खाली */
-.call-float {
-    bottom: 20px; /* खालून अंतर (कमी असल्यामुळे खाली दिसेल) */
-    right: 20px;  /* उजव्या बाजूने अंतर */
-    background-color: #0284c7;
-}
-
