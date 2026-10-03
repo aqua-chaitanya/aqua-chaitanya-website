@@ -387,18 +387,37 @@ p {
     font-size: 17px !important; /* हा आकडा गरजेनुसार 18px किंवा 19px करू शकता */
     line-height: 1.6 !important; /* ओळींमधील अंतर व्यवस्थित ठेवण्यासाठी */
 }
-/* WhatsApp बटण डाव्या बाजूला फिक्स करण्यासाठी */
-.whatsapp-btn {
-    position: fixed;
-    bottom: 20px;
-    left: 20px;
-    z-index: 1000;
+/* WhatsApp बटण स्टाईल आणि फिक्स करण्यासाठी */
+.whatsapp-btn, a[href*="whatsapp"] {
+    position: fixed !important;
+    bottom: 20px !important;
+    left: 20px !important;
+    z-index: 9999 !important;
+    background-color: #25D366 !important;
+    color: white !important;
+    padding: 12px 20px !important;
+    border-radius: 50px !important;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3) !important;
+    display: flex !important;
+    align-items: center !important;
+    gap: 8px !important;
+    text-decoration: none !important;
 }
 
-/* Call Us Now बटण उजव्या बाजूला फिक्स करण्यासाठी */
-.call-btn {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    z-index: 1000;
+/* Call Us Now बटण स्टाईल आणि फिक्स करण्यासाठी */
+.call-btn, a[href*="tel:"] {
+    position: fixed !important;
+    bottom: 20px !important;
+    right: 20px !important;
+    z-index: 9999 !important;
+    background-color: #22c55e !important;
+    color: white !important;
+    padding: 12px 20px !important;
+    border-radius: 50px !important;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3) !important;
+    display: flex !important;
+    align-items: center !important;
+    gap: 8px !important;
+    text-decoration: none !important;
 }
+
