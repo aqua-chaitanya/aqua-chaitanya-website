@@ -216,42 +216,9 @@ h1, .business-name, .logo-title {
       color: #777;
       border-top: 1px solid #ddd;
     }
-    /* ===== SERVICE BOX LEFT RIGHT ANIMATION ===== */
+    
 
-#services .card {
-    opacity: 0;
-    transition: opacity 0.8s ease, transform 0.8s ease;
-}
-
-/* Odd boxes - Left side */
-#services .card.from-left {
-    transform: translateX(-100px);
-}
-
-/* Even boxes - Right side */
-#services .card.from-right {
-    transform: translateX(100px);
-}
-
-/* Animation complete */
-#services .card.show {
-    opacity: 1;
-    transform: translateX(0);
-}
-
-/* Mobile */
-@media (max-width: 600px) {
-    #services .card.from-left {
-        transform: translateX(-60px);
-    }
-
-    #services .card.from-right {
-        transform: translateX(60px);
-    }
-}
   </style>
-  
-
   
 </head>
 <body id="home">
