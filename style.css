@@ -38,6 +38,7 @@ header {
 header h1 {
     font-size: 22px;
     font-weight: 700;
+    margin-top: 5px;
     margin-bottom: 6px;
     letter-spacing: 0.2px;
 }
@@ -371,11 +372,6 @@ header p {
   100% { transform: translateY(0px); }
 }
 
-//* फक्त मुख्य नावावर आणि हेडिंग्सवर Moralala फॉन्ट राहिल */
-h1, h2, h3, .main-heading {
-    font-family: 'Moralala', serif !important;
-    font-weight: 700 !important;
-}
 
 /* Welcome ओळीसाठी Playball फॉन्ट */
 .welcome-heading {
