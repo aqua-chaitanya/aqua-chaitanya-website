@@ -389,65 +389,82 @@ header {
 }
 /* HOW OUR SERVICE WORKS */
 
-.service-process {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 0;
-  margin-top: 25px;
+.steps-section {
+    padding: 40px 20px;
+    background: #f0f8ff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.process-box {
-  width: 90%;
-  max-width: 430px;
-  background: rgba(255, 255, 255, 0.96);
-  border: 2px solid #0284c7;
-  border-radius: 18px;
-  padding: 20px;
-  text-align: center;
-  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.12);
-  transition: all 0.3s ease;
-  position: relative;
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
 }
 
-.process-box:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 12px 28px rgba(2, 132, 199, 0.25);
+.section-title {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 30px;
 }
 
-.process-number {
-  width: 42px;
-  height: 42px;
-  margin: 0 auto 10px;
-  border-radius: 50%;
-  background: #0284c7;
-  color: white;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: bold;
-  font-size: 15px;
+.steps-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
 }
 
-.process-box h3 {
-  margin: 5px 0 8px;
-  color: #0284c7;
-  font-size: 20px;
+.step-card {
+    background: #ffffff;
+    padding: 25px 20px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
 }
 
-.process-box p {
-  margin: 0;
-  color: #555;
-  font-size: 14px;
-  line-height: 1.5;
+.step-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
 }
 
-.process-arrow {
-  font-size: 35px;
-  font-weight: bold;
-  color: #0284c7;
-  height: 48px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+/* प्रत्येकासाठी वेगळा आकर्षक रंग आणि बॉर्डर */
+.box-1 { border-top: 5px solid #ff6b6b; }
+.box-2 { border-top: 5px solid #48dbfb; }
+.box-3 { border-top: 5px solid #1dd1a1; }
+.box-4 { border-top: 5px solid #feca57; }
+.box-5 { border-top: 5px solid #ff9ff3; }
+
+.step-number {
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+    background: #333;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin: 0 auto 15px auto;
+}
+
+/* बॉक्सनुसार नंबरचा बॅकग्राउंड कलर बदलण्यासाठी */
+.box-1 .step-number { background: #ff6b6b; }
+.box-2 .step-number { background: #48dbfb; }
+.box-3 .step-number { background: #1dd1a1; }
+.box-4 .step-number { background: #feca57; color: #333; }
+.box-5 .step-number { background: #ff9ff3; color: #333; }
+
+.step-card h3 {
+    font-size: 20px;
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+.step-card p {
+    font-size: 14px;
+    color: #666;
+    line-height: 1.5;
 }
