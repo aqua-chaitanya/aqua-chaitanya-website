@@ -387,4 +387,141 @@ header {
     border-radius: 25px !important;
     overflow: hidden;
 }
+/* ================================
+   HOW OUR SERVICE WORKS
+================================ */
 
+.how-service-works {
+  padding: 50px 20px;
+  margin: 30px 0;
+  text-align: center;
+  background: linear-gradient(180deg, #f0f9ff, #ffffff);
+  border-radius: 25px;
+}
+
+.how-service-works h2 {
+  margin-bottom: 8px;
+  color: #0284c7;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.service-subtitle {
+  margin-bottom: 35px;
+  color: #64748b;
+  font-size: 15px;
+}
+
+/* Steps container */
+
+.service-steps {
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  gap: 12px;
+}
+
+/* Individual card */
+
+.service-step {
+  position: relative;
+  flex: 1;
+  max-width: 220px;
+  padding: 25px 15px;
+  background: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 8px 25px rgba(2, 132, 199, 0.12);
+  border: 1px solid #e0f2fe;
+  transition: all 0.3s ease;
+}
+
+.service-step:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 14px 30px rgba(2, 132, 199, 0.20);
+}
+
+/* Number */
+
+.step-number {
+  position: absolute;
+  top: 10px;
+  right: 12px;
+  font-size: 12px;
+  font-weight: bold;
+  color: #0284c7;
+}
+
+/* Icon */
+
+.step-icon {
+  width: 65px;
+  height: 65px;
+  margin: 5px auto 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #e0f2fe;
+  border-radius: 50%;
+  font-size: 30px;
+}
+
+/* Heading */
+
+.service-step h3 {
+  margin: 8px 0;
+  color: #0f172a;
+  font-size: 17px;
+}
+
+/* Description */
+
+.service-step p {
+  margin: 0;
+  color: #64748b;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+/* Arrow */
+
+.step-arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #0284c7;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+
+/* ================================
+   MOBILE RESPONSIVE
+================================ */
+
+@media (max-width: 700px) {
+
+  .how-service-works {
+    padding: 40px 15px;
+    border-radius: 20px;
+  }
+
+  .how-service-works h2 {
+    font-size: 25px;
+  }
+
+  .service-steps {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .service-step {
+    width: 100%;
+    max-width: 320px;
+  }
+
+  .step-arrow {
+    transform: rotate(90deg);
+    font-size: 24px;
+  }
+}
