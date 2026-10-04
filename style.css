@@ -387,7 +387,6 @@ header {
     border-radius: 25px !important;
     overflow: hidden;
 }
-/* HOW OUR SERVICE WORKS */
 .ro-service-container {
     width: 100%;
     max-width: 360px;
@@ -400,57 +399,57 @@ header {
 
 .ro-service-container h2 {
     color: #1e293b;
-    margin-bottom: 12px;
+    margin-bottom: 10px;
     font-size: 18px;
     text-align: center;
 }
 
-/* बॉक्स अगदी नॅरो आणि लहान करण्यासाठी पॅडिंग कमी ठेवले आहे */
-.service-card {
+/* बॉक्सेस नॅरो आणि सुटसुटीत करण्यासाठी कमी पॅडिंग */
+.service-card, .service-box {
     border-radius: 8px;
-    padding: 8px 12px;
+    padding: 6px 10px;
     width: 100%;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.08);
-    margin: 3px 0;
+    margin: 2px 0;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.06);
 }
 
-/* प्रत्येकाचा बॉक्स पूर्णपणे कलरफुल दिसेल (फॉन्ट कलर जसा आहे तसाच राहील) */
-.service-card:nth-of-type(1) { background-color: #dbeafe; border: 1px solid #93c5fd; } /* सुंदर हलका निळा बॉक्स */
-.service-card:nth-of-type(3) { background-color: #fef9c3; border: 1px solid #fde047; } /* सुंदर हलका पिवळा बॉक्स */
-.service-card:nth-of-type(5) { background-color: #dcfce7; border: 1px solid #86efac; } /* सुंदर हलका हिरवा बॉक्स */
-.service-card:nth-of-type(7) { background-color: #fae8ff; border: 1px solid #f0abfc; } /* सुंदर हलका जांभळा बॉक्स */
-.service-card:nth-of-type(9) { background-color: #ffedd5; border: 1px solid #fdba74; } /* सुंदर हलका नारंगी बॉक्स */
+/* प्रत्येक बॉक्ससाठी स्वतंत्र आणि आकर्षक रंग (फॉन्ट कलर बदलणार नाही) */
+.service-card:nth-of-type(1), .box-1 { background-color: #dbeafe; border: 1px solid #93c5fd; } /* हलका निळा बॉक्स */
+.service-card:nth-of-type(3), .box-2 { background-color: #fef9c3; border: 1px solid #fde047; } /* हलका पिवळा बॉक्स */
+.service-card:nth-of-type(5), .box-3 { background-color: #dcfce7; border: 1px solid #86efac; } /* हलका हिरवा बॉक्स */
+.service-card:nth-of-type(7), .box-4 { background-color: #fae8ff; border: 1px solid #f0abfc; } /* हलका जांभळा बॉक्स */
+.service-card:nth-of-type(9), .box-5 { background-color: #ffedd5; border: 1px solid #fdba74; } /* हलका नारंगी बॉक्स */
 
 .service-icon {
-    font-size: 20px;
-    margin-bottom: 2px;
+    font-size: 18px;
+    margin-bottom: 1px;
 }
 
-.service-card h3 {
-    margin: 0 0 2px 0;
-    font-size: 14px;
+.service-card h3, .service-box h3 {
+    margin: 0 0 1px 0;
+    font-size: 13.5px;
     font-weight: bold;
 }
 
-.service-card p {
+.service-card p, .service-box p {
     margin: 0;
-    font-size: 11.5px;
+    font-size: 11px;
 }
 
 .arrow-down {
     margin: 2px 0;
-    font-size: 12px;
+    font-size: 11px;
     background: #ffffff;
     border-radius: 50%;
-    width: 20px;
-    height: 20px;
+    width: 18px;
+    height: 18px;
     display: flex;
     align-items: center;
     justify-content: center;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.15);
+    box-shadow: 0 1px 2px rgba(0,0,0,0.1);
 }
