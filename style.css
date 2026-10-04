@@ -389,71 +389,37 @@ header {
 }
 /* HOW OUR SERVICE WORKS */
 
-.ro-process-section {
-    padding: 40px 20px;
-    background: #f8f9fa;
-    font-family: 'Poppins', sans-serif;
-}
-
-.container {
+.services-container {
     max-width: 600px;
-    margin: 0 auto;
+    margin: 20px auto;
+    padding: 0 15px;
 }
 
-.main-title {
-    text-align: center;
-    font-size: 24px;
-    color: #1a1a1a;
-    margin-bottom: 25px;
-    font-weight: 700;
+.step-box {
+    background-color: #ffffff;
+    border-radius: 12px;
+    padding: 18px 20px;
+    margin-bottom: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    border-left: 6px solid;
+    text-align: left;
 }
 
-.boxes-container {
-    display: flex;
-    flex-direction: column;
-    gap: 16px; /* बॉक्सेसमधील योग्य अंतर */
-}
+/* प्रत्येक बॉक्ससाठी वेगवेगळे आकर्षक रंग */
+.box-1 { border-left-color: #ff6b6b; background-color: #fff5f5; }
+.box-2 { border-left-color: #4dabf7; background-color: #f0f7ff; }
+.box-3 { border-left-color: #fcc419; background-color: #fffdf0; }
+.box-4 { border-left-color: #51cf66; background-color: #f4fcf5; }
+.box-5 { border-left-color: #845ef7; background-color: #f8f0fc; }
 
-.service-box {
-    padding: 22px 25px;
-    border-radius: 14px;
-    color: #ffffff;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.service-box:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
-}
-
-/* प्रत्येकासाठी आकर्षक आणि वेगळे कलरफुल ग्रॅडिअंट्स */
-.box-blue { 
-    background: linear-gradient(135deg, #0052D4, #4364F7, #6FB1FC); 
-}
-.box-purple { 
-    background: linear-gradient(135deg, #8E2DE2, #4A00E0); 
-}
-.box-green { 
-    background: linear-gradient(135deg, #11998e, #38ef7d); 
-}
-.box-orange { 
-    background: linear-gradient(135deg, #F37335, #FDC830); 
-}
-.box-pink { 
-    background: linear-gradient(135deg, #EB3349, #F45C43); 
-}
-
-.service-box h3 {
+.step-box h3 {
     margin: 0 0 6px 0;
-    font-size: 20px;
-    font-weight: 600;
-    letter-spacing: 0.5px;
+    color: #212529;
+    font-size: 18px;
 }
 
-.service-box p {
+.step-box p {
     margin: 0;
+    color: #495057;
     font-size: 14px;
-    opacity: 0.95;
-    line-height: 1.5;
 }
