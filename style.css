@@ -392,14 +392,14 @@ body {
     background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
     font-family: Arial, sans-serif;
     margin: 0;
-    padding: 20px;
+    padding: 15px;
     display: flex;
     justify-content: center;
 }
 
 .ro-service-container {
     width: 100%;
-    max-width: 400px;
+    max-width: 380px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -407,24 +407,25 @@ body {
 
 .ro-service-container h2 {
     color: #1e293b;
-    margin-bottom: 24px;
-    font-size: 22px;
+    margin-bottom: 16px;
+    font-size: 20px;
     text-align: center;
 }
 
 .service-card {
-    border-radius: 16px;
-    padding: 20px;
+    border-radius: 12px;
+    padding: 12px 16px;
     width: 100%;
     box-sizing: border-box;
     text-align: center;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    gap: 14px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
     transition: transform 0.2s ease;
     border: 1px solid rgba(255, 255, 255, 0.6);
 }
 
 .service-card:hover {
-    transform: translateY(-3px);
+    transform: translateY(-2px);
 }
 
 /* प्रत्येक कार्डसाठी वेगवेगळे आकर्षक आणि हलके रंग */
@@ -435,31 +436,31 @@ body {
 .card-5 { background: linear-gradient(135deg, #ffedd5 0%, #fed7aa 100%); } /* हलка नारंगी */
 
 .service-icon {
-    font-size: 32px;
+    font-size: 28px;
     margin-bottom: 10px;
 }
 
 .service-card h3 {
-    margin: 0 0 8px 0;
+    margin: 0 0 3px 0;
     color: #0f172a;
-    font-size: 18px;
+    font-size: 16px;
 }
 
 .service-card p {
     margin: 0;
     color: #334155;
-    font-size: 14px;
+    font-size: 13px;
 }
 
 .arrow-down {
-    margin: 10px 0;
-    font-size: 16px;
+    margin: 6px 0;
+    font-size: 14px;
     background: #ffffff;
     border-radius: 50%;
-    width: 32px;
-    height: 32px;
+    width: 26px;
+    height: 26px;
     display: flex;
     align-items: center;
     justify-content: center;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
