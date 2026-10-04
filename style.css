@@ -1,7 +1,7 @@
 /* --- Global Reset & Font --- */
 * {
     box-sizing: border-box;
-    border-radius: 0px;
+    border-radius: 25px;
     margin: 0;
     padding: 0;
 }
@@ -382,3 +382,9 @@ p {
     font-size: 17px !important; /* हा आकडा गरजेनुसार 18px किंवा 19px करू शकता */
     line-height: 1.6 !important; /* ओळींमधील अंतर व्यवस्थित ठेवण्यासाठी */
 }
+/* ===== HEADER BLUE BOX - ALL CORNERS ROUND ===== */
+header {
+    border-radius: 25px !important;
+    overflow: hidden;
+}
+
