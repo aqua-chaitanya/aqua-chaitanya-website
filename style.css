@@ -389,10 +389,15 @@ header {
 }
 /* HOW OUR SERVICE WORKS */
 
+.ro-process-section {
+    padding: 20px;
+    background-color: #f4f7f6;
+    text-align: center;
+}
+
 .services-container {
     max-width: 600px;
-    margin: 20px auto;
-    padding: 0 15px;
+    margin: 0 auto;
 }
 
 .step-box {
@@ -405,7 +410,7 @@ header {
     text-align: left;
 }
 
-/* प्रत्येक बॉक्ससाठी वेगवेगळे आकर्षक रंग */
+/* बॉक्सचे वेगवेगळे आकर्षक रंग */
 .box-1 { border-left-color: #ff6b6b; background-color: #fff5f5; }
 .box-2 { border-left-color: #4dabf7; background-color: #f0f7ff; }
 .box-3 { border-left-color: #fcc419; background-color: #fffdf0; }
