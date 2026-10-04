@@ -387,6 +387,8 @@ header {
     border-radius: 25px !important;
     overflow: hidden;
 }
+/* कन्फ्युजन टाळण्यासाठी थेट बॉक्सच्या क्रमानुसार रंग आणि नॅरो साईझ */
+
 .ro-service-container {
     width: 100%;
     max-width: 360px;
@@ -404,52 +406,76 @@ header {
     text-align: center;
 }
 
-/* बॉक्सेस नॅरो आणि सुटसुटीत करण्यासाठी कमी पॅडिंग */
-.service-card, .service-box {
-    border-radius: 8px;
-    padding: 6px 10px;
-    width: 100%;
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    margin: 2px 0;
-    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.06);
+/* बॉक्स एकदम नॅरो आणि सुटसुटीत करण्यासाठी */
+div[class*="card"], div[class*="box"], .service-box, .service-card {
+    border-radius: 8px !important;
+    padding: 6px 10px !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    text-align: center !important;
+    margin: 2px 0 !important;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.06) !important;
 }
 
-/* प्रत्येक बॉक्ससाठी स्वतंत्र आणि आकर्षक रंग (फॉन्ट कलर बदलणार नाही) */
-.service-card:nth-of-type(1), .box-1 { background-color: #dbeafe; border: 1px solid #93c5fd; } /* हलका निळा बॉक्स */
-.service-card:nth-of-type(3), .box-2 { background-color: #fef9c3; border: 1px solid #fde047; } /* हलका पिवळा बॉक्स */
-.service-card:nth-of-type(5), .box-3 { background-color: #dcfce7; border: 1px solid #86efac; } /* हलका हिरवा बॉक्स */
-.service-card:nth-of-type(7), .box-4 { background-color: #fae8ff; border: 1px solid #f0abfc; } /* हलका जांभळा बॉक्स */
-.service-card:nth-of-type(9), .box-5 { background-color: #ffedd5; border: 1px solid #fdba74; } /* हलका नारंगी बॉक्स */
-
-.service-icon {
-    font-size: 18px;
-    margin-bottom: 1px;
+/* पानावरील पहिल्या बॉक्सचा रंग (निळा) */
+.ro-service-container > div:nth-of-type(2) {
+    background-color: #dbeafe !important;
+    border: 1px solid #93c5fd !important;
 }
 
-.service-card h3, .service-box h3 {
-    margin: 0 0 1px 0;
-    font-size: 13.5px;
-    font-weight: bold;
+/* पानावरील दुसऱ्या बॉक्सचा रंग (पिवळा) */
+.ro-service-container > div:nth-of-type(4) {
+    background-color: #fef9c3 !important;
+    border: 1px solid #fde047 !important;
 }
 
-.service-card p, .service-box p {
-    margin: 0;
-    font-size: 11px;
+/* पानावरील तिसऱ्या बॉक्सचा रंग (हिरवा) */
+.ro-service-container > div:nth-of-type(6) {
+    background-color: #dcfce7 !important;
+    border: 1px solid #86efac !important;
+}
+
+/* पानावरील चौथ्या बॉक्सचा रंग (जांभळा) */
+.ro-service-container > div:nth-of-type(8) {
+    background-color: #fae8ff !important;
+    border: 1px solid #f0abfc !important;
+}
+
+/* पानावरील पाचव्या बॉक्सचा रंग (नारंगी) */
+.ro-service-container > div:nth-of-type(10) {
+    background-color: #ffedd5 !important;
+    border: 1px solid #fdba74 !important;
+}
+
+/* आयकॉन आणि मजकुराची साईज नॅरो ठेवण्यासाठी */
+.service-icon, div[class*="icon"] {
+    font-size: 18px !important;
+    margin-bottom: 1px !important;
+}
+
+h3 {
+    margin: 0 0 1px 0 !important;
+    font-size: 13.5px !important;
+    font-weight: bold !important;
+}
+
+p {
+    margin: 0 !important;
+    font-size: 11px !important;
 }
 
 .arrow-down {
-    margin: 2px 0;
-    font-size: 11px;
-    background: #ffffff;
-    border-radius: 50%;
-    width: 18px;
-    height: 18px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+    margin: 2px 0 !important;
+    font-size: 11px !important;
+    background: #ffffff !important;
+    border-radius: 50% !important;
+    width: 18px !important;
+    height: 18px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.1) !important;
 }
