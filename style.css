@@ -388,45 +388,78 @@ header {
     overflow: hidden;
 }
 /* HOW OUR SERVICE WORKS */
-.services-container {
-    max-width: 600px;
-    margin: 0 auto;
+body {
+    background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.ro-service-container {
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ro-service-container h2 {
+    color: #1e293b;
+    margin-bottom: 24px;
+    font-size: 22px;
     text-align: center;
 }
 
-.step-box {
-    display: block !important;
-    background: #ffffff !important;
-    border-radius: 10px !important;
-    padding: 18px 20px !important;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1) !important;
-    border-left: 8px solid !important;
-    text-align: left !important;
+.service-card {
+    border-radius: 16px;
+    padding: 20px;
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s ease;
+    border: 1px solid rgba(255, 255, 255, 0.6);
 }
 
-/* एरोसाठी डिझाईन */
-.step-arrow {
-    font-size: 24px;
-    color: #4dabf7;
+.service-card:hover {
+    transform: translateY(-3px);
+}
+
+/* प्रत्येक कार्डसाठी वेगवेगळे आकर्षक आणि हलके रंग */
+.card-1 { background: linear-gradient(135deg, #e0f2fe 0%, #bae6fd 100%); } /* हलका निळा */
+.card-2 { background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%); } /* हलका पिवळा */
+.card-3 { background: linear-gradient(135deg, #dcfce7 0%, #bbf7d0 100%); } /* हलका हिरवा */
+.card-4 { background: linear-gradient(135deg, #fae8ff 0%, #f5d0fe 100%); } /* हलका जांभळा */
+.card-5 { background: linear-gradient(135deg, #ffedd5 0%, #fed7aa 100%); } /* हलка नारंगी */
+
+.service-icon {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.service-card h3 {
+    margin: 0 0 8px 0;
+    color: #0f172a;
+    font-size: 18px;
+}
+
+.service-card p {
+    margin: 0;
+    color: #334155;
+    font-size: 14px;
+}
+
+.arrow-down {
     margin: 10px 0;
-    text-align: center;
-}
-
-/* बॉक्सचे वेगवेगळे रंग */
-.box-1 { border-left-color: #ff6b6b !important; background-color: #fff5f5 !important; }
-.box-2 { border-left-color: #4dabf7 !important; background-color: #f0f7ff !important; }
-.box-3 { border-left-color: #fcc419 !important; background-color: #fffdf0 !important; }
-.box-4 { border-left-color: #51cf66 !important; background-color: #f4fcf5 !important; }
-.box-5 { border-left-color: #845ef7 !important; background-color: #f8f0fc !important; }
-
-.step-box h3 {
-    margin: 0 0 6px 0 !important;
-    color: #212529 !important;
-    font-size: 18px !important;
-}
-
-.step-box p {
-    margin: 0 !important;
-    color: #495057 !important;
-    font-size: 14px !important;
+    font-size: 16px;
+    background: #ffffff;
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
