@@ -387,61 +387,46 @@ header {
     border-radius: 25px !important;
     overflow: hidden;
 }
-/* कन्फ्युजन टाळण्यासाठी थेट बॉक्सच्या क्रमानुसार रंग आणि नॅरो साईझ */
-
-/* पूर्ण सेक्शनचे सेटिंग्स */
-.service-section {
-    text-align: center;
-    padding: 20px 10px;
-}
-
-/* हेडिंगची स्टाईल */
-.section-title {
-    font-size: 22px;
-    color: #1a365d;
-    margin-bottom: 20px;
-    font-weight: bold;
-}
-
 /* मुख्य कन्टेनर - बॉक्सेस समोरासमोर आणण्यासाठी */
 .service-grid-container {
     display: flex;
     flex-wrap: wrap;
-    gap: 15px;
+    gap: 12px;
     justify-content: center;
+    padding: 10px;
 }
 
-/* प्रत्येक बॉक्सची साईज आणि डिझाइन */
+/* प्रत्येक बॉक्सचा आकार चौरस (Square) आणि लहान करण्यासाठी */
 .service-card {
-    width: 45%; /* मोबाईलवर एका ओळीत दोन बॉक्सेस */
-    min-height: 140px;
-    padding: 15px;
+    width: 46% !important;        /* मोबाईलवर एका ओळीत दोन बॉक्सेस येतील */
+    aspect-ratio: 1 / 1 !important; /* बॉक्सची रुंदी आणि उंची समान (Square) राहील */
+    height: auto !important;
+    padding: 12px !important;
     border-radius: 12px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     text-align: center;
     box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-/* प्रत्येक स्वतंत्र बॉक्ससाठी आकर्षक आणि वेगवेगळे हलके रंग */
-.box-1 { background: linear-gradient(135deg, #e3f2fd, #bbdefb); }
-.box-2 { background: linear-gradient(135deg, #e8f5e9, #c8e6c9); }
-.box-3 { background: linear-gradient(135deg, #fff3e0, #ffe0b2); }
-.box-4 { background: linear-gradient(135deg, #f3e5f5, #e1bee7); }
-.box-5 { background: linear-gradient(135deg, #e0f7fa, #b2ebf2); }
-
-/* बॉक्समधील मजकुराची साईज */
+/* बॉक्समधील मजकुराची साईज योग्य ठेवण्यासाठी */
 .service-card h3 {
-    font-size: 15px;
-    margin: 8px 0;
+    font-size: 14px !important;
+    margin: 6px 0 !important;
     color: #333;
 }
 
 .service-card p {
-    font-size: 12px;
+    font-size: 11px !important;
     color: #666;
-    margin: 0;
+    margin: 0 !important;
+    line-height: 1.2;
 }
 
 .service-icon {
-    font-size: 24px;
+    font-size: 22px !important;
+    margin-bottom: 2px;
 }
