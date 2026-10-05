@@ -388,6 +388,7 @@ header {
     overflow: hidden;
 }
 /* मुख्य कन्टेनर - बॉक्सेस समोरासमोर आणण्यासाठी */
+/* मुख्य कन्टेनर - बॉक्सेस समोरासमोर आणण्यासाठी */
 .service-grid-container {
     display: flex;
     flex-wrap: wrap;
