@@ -1154,8 +1154,98 @@ h1, .business-name, .logo-title {
         .box-5 h3 {
             font-size: 17px;
         }
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How Our Services Work</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f0f8ff;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .services-section {
+            width: 100%;
+            max-width: 500px;
+            text-align: center;
+        }
+
+        h2 {
+            color: #1b365d;
+            margin-bottom: 25px;
+            font-size: 26px;
+        }
+
+        /* वरच्या ४ बॉक्सेससाठी २x२ ग्रीड रचना */
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+            margin-bottom: 15px;
+        }
+
+        /* कॉमन बॉक्स स्टाईल आणि ॲनिमेशन */
+        .service-box {
+            padding: 22px 15px;
+            border-radius: 18px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+            text-align: center;
+            opacity: 0;
+            transform: translateY(30px);
+            animation: floatIn 0.8s ease forwards;
+        }
+
+        /* एकापाठोपाठ एक येण्यासाठी ॲनिमेशन डिले */
+        .box-1 { background-color: #e3f2fd; animation-delay: 0.2s; }
+        .box-2 { background-color: #e8f5e9; animation-delay: 0.4s; }
+        .box-3 { background-color: #fff3e0; animation-delay: 0.6s; }
+        .box-4 { background-color: #f3e5f5; animation-delay: 0.8s; }
+        
+        /* पाचवा बॉक्स खाली पूर्ण रुंदीचा आणि लहान आकाराचा */
+        .box-5 { 
+            background-color: #e0f7fa; 
+            padding: 15px; 
+            animation-delay: 1.0s; 
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        .service-box .icon {
+            font-size: 30px;
+            margin-bottom: 8px;
+        }
+
+        /* वरच्या ४ बॉक्सेसमधील फॉन्ट साईज मोठी केली आहे */
+        .services-grid .service-box h3 {
+            margin: 5px 0 8px 0;
+            font-size: 18px;
+            color: #1b365d;
+        }
+
+        .services-grid .service-box p {
+            margin: 0;
+            font-size: 14px;
+            color: #444;
+            line-height: 1.4;
+        }
+
+        /* पाचव्या बॉक्सचे स्वरूप */
+        .box-5 h3 {
+            margin: 2px 0 5px 0;
+            font-size: 16px;
+            color: #1b365d;
+        }
         .box-5 p {
+            margin: 0;
             font-size: 13px;
+            color: #444;
         }
 
         /* फ्लोटिंग ॲनिमेशन की-फ्रेम्स */
@@ -1169,38 +1259,37 @@ h1, .business-name, .logo-title {
 </head>
 <body>
 
-    <h2>How Our Services Work</h2>
+    <div class="services-section">
+        <h2>How Our Services Work</h2>
 
-    <div class="services-container">
-        <!-- Box 1 -->
-        <div class="service-box box-1">
-            <div class="icon">💧</div>
-            <h3>1. RO Service</h3>
-            <p>Book your water purifier service easily with Aqua Chaitanya.</p>
+        <!-- वरचे ४ बॉक्सेस (2x2 Grid) -->
+        <div class="services-grid">
+            <div class="service-box box-1">
+                <div class="icon">💧</div>
+                <h3>1. RO Service</h3>
+                <p>Book your water purifier service easily with Aqua Chaitanya.</p>
+            </div>
+
+            <div class="service-box box-2">
+                <div class="icon">👨‍‍🔧</div>
+                <h3>2. Technician Visit</h3>
+                <p>Our expert technician visits your location on time.</p>
+            </div>
+
+            <div class="service-box box-3">
+                <div class="icon">🔍</div>
+                <h3>3. Inspection</h3>
+                <p>Complete check-up of your RO purifier parts and filters.</p>
+            </div>
+
+            <div class="service-box box-4">
+                <div class="icon">⚙️</div>
+                <h3>4. Expert Service</h3>
+                <p>Professional repair & maintenance using quality spare parts.</p>
+            </div>
         </div>
 
-        <!-- Box 2 -->
-        <div class="service-box box-2">
-            <div class="icon">👨‍🔧</div>
-            <h3>2. Technician Visit</h3>
-            <p>Our expert technician visits your location on time.</p>
-        </div>
-
-        <!-- Box 3 -->
-        <div class="service-box box-3">
-            <div class="icon">🔍</div>
-            <h3>3. Inspection</h3>
-            <p>Complete check-up of your RO purifier parts and filters.</p>
-        </div>
-
-        <!-- Box 4 -->
-        <div class="service-box box-4">
-            <div class="icon">⚙️</div>
-            <h3>4. Expert Service</h3>
-            <p>Professional repair & maintenance using quality spare parts.</p>
-        </div>
-
-        <!-- Box 5 (Small Size) -->
+        <!-- पाचवा बॉक्स (छोटा आणि कॉम्पॅक्ट) -->
         <div class="service-box box-5">
             <div class="icon">😊</div>
             <h3>5. Happy Customer</h3>
@@ -1210,7 +1299,6 @@ h1, .business-name, .logo-title {
 
 </body>
 </html>
-
 
 <!-- Book RO Service Section -->
 <div style="background: linear-gradient(135deg, #f0f4ff 0%, #e8f8f5 100%); padding: 40px 20px; border-radius: 24px; max-width: 500px; margin: 30px auto; font-family: 'Poppins', sans-serif; box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);">
