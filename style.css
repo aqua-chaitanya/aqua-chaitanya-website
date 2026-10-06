@@ -15,20 +15,16 @@ body {
 
 /* --- Header Section (Blue Gradient) --- */
 header {
-    /* पाण्याचा आणि थेंबांचा सुंदर इफेक्ट देणारा CSS कोड */
-    background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%), 
-                radial-gradient(circle at 20% 30%, rgba(255, 255, 255, 0.8) 0%, transparent 40%),
-                radial-gradient(circle at 80% 70%, rgba(255, 255, 255, 0.6) 0%, transparent 50%),
-                linear-gradient(to bottom, #4ca1af, #c4e0e5);
-    background-blend-mode: overlay;
-    color: #ffffff;
+    background: linear-gradient(135deg, #4ca1af 0%, #c4e0e5 100%) !important;
+    color: #ffffff !important;
     text-align: center;
-    padding: 20px 15px;
+    padding: 25px 15px;
     border: none;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
 }
+
 
 
 .logo {
