@@ -1331,16 +1331,24 @@ h1, .business-name, .logo-title {
     height: 38px !important;
     min-width: auto !important;
     padding: 0 12px !important;
-    background: #cce7ff !important; /* हलका स्काय ब्लू रंग */
-    color: black !important; /* टेक्स्टचा रंग */
+    background: #cce7ff !important; /* हलका स्काय ब्लू बॅकग्राउंड */
+    color: #1a5276 !important; /* टेक्स्ट आणि आयकॉनसाठी गडद निळा रंग */
     border-radius: 35px !important;
     display: flex !important;
     align-items: center !important;
     justify-content: center !important;
     border: none !important;
     text-decoration: none !important;
-    box-shadow: none !important; /* खाली असलेली लाईन किंवा शेडो काढण्यासाठी */
+    box-shadow: none !important;
 }
+
+/* आयकॉनलाही तोच गडद निळा रंग मिळण्यासाठी */
+.ac-call i, 
+.ac-call svg {
+    color: #1a5276 !important;
+    fill: #1a5276 !important;
+}
+
 
 
 /* Call Text */
