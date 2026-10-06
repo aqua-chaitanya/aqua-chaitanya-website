@@ -78,13 +78,17 @@ h1, .business-name, .logo-title {
     }
 
     /* नेव्हिगेशन अ‍ॅनिमेशन */
-    .nav-buttons {
-      margin-top: 15px;
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      gap: 6px;
-    }
+    ..nav-buttons {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap !important; /* इथे wrap ऐवजी nowrap करा */
+    gap: 6px;
+    overflow-x: auto; /* जागेची कमतरता असल्यास मोबाईलवर आरामात स्वााईप करता येईल */
+    padding-bottom: 5px;
+}
+
 
     .nav-buttons a {
       background-color: rgba(255, 255, 255, 0.2);
