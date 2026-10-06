@@ -435,3 +435,34 @@ header {
     font-size: 22px !important;
     margin-bottom: 2px;
 }
+/* नेव्हिगेशन कंटेनर - एका ओळीत आणण्यासाठी */
+header nav, .header-nav, .nav-links {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 8px; /* बटणांमधील अंतर */
+    overflow-x: auto; /* ओळ लांब झाल्यास मोबाईलवर स्क्रोल होण्यासाठी */
+    padding: 10px 0;
+}
+
+/* सर्व बटन्स किंवा लिंक्ससाठी डिझाइन आणि कलर */
+header a, header button, .nav-btn {
+    background: rgba(255, 255, 255, 0.25) !important; /* बॅकग्राउंडशी मॅच होणारा हलका ग्लासी इफेक्ट */
+    color: #ffffff !important; /* पांढरा मजकूर */
+    border: 1px solid rgba(255, 255, 255, 0.5) !important; /* हलकी बॉर्डर */
+    padding: 6px 12px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    white-space: nowrap; /* शब्द खाली येऊ नये म्हणून */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+/* बटणावर क्लिक करताना किंवा हात नेल्यावर होणारा बदल */
+header a:hover, header button:hover {
+    background: rgba(255, 255, 255, 0.4) !important;
+}
+
