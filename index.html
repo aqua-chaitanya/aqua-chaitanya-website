@@ -1327,26 +1327,42 @@ h1, .business-name, .logo-title {
 .ac-call {
     position: fixed !important;
     right: 18px !important;
-    bottom: 65px !important;
+    bottom: 85px !important;
     height: 38px !important;
     min-width: auto !important;
-    padding: 0 12px !important;
-    background: #cce7ff !important; /* हलका स्काय ब्लू बॅकग्राउंड */
+    padding: 0 16px !important;
+    background: #cce7ff !important; /* हलका स्काय ब्लू रंग */
     border-radius: 35px !important;
-    display: flex !important;
+    display: inline-flex !important;
+    flex-direction: row-reverse !important;
     align-items: center !important;
     justify-content: center !important;
+    gap: 8px !important;
     border: none !important;
     text-decoration: none !important;
     box-shadow: none !important;
+    z-index: 9999 !important;
 }
 
-/* बटनमधील सर्व मजकूर आणि आयकॉनचा रंग गडद निळा करण्यासाठी */
+/* कॉल नाऊ टेक्स्ट, स्पॅन, आणि इतर सर्व घटकांचा रंग सक्तीने डार्क ब्लू करणे */
 .ac-call, 
+.ac-call span, 
+.ac-call a, 
+.ac-call div, 
+.ac-call font,
 .ac-call * {
     color: #1a5276 !important;
-    fill: #1a5276 !important;
 }
+
+/* आयकॉनचा रंग डार्क ब्लू करणे */
+.ac-call i, 
+.ac-call svg, 
+.ac-call svg path {
+    color: #1a5276 !important;
+    fill: #1a5276 !important;
+    stroke: #1a5276 !important;
+}
+
 
 /* Call Text */
 
