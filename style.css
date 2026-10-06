@@ -15,7 +15,9 @@ body {
 
 /* --- Header Section (Blue Gradient) --- */
 header {
-    background: linear-gradient(180deg, #0284c7 0%, #0369a1 100%);
+        background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), 
+                url('water-bg.jpg') no-repeat center center/cover !important;
+
     color: #ffffff;
     text-align: center;
     padding: 10px 12px 14px 14px;
